@@ -60,23 +60,39 @@ public class SiteController {
 		HttpSession session = request.getSession();
 		List<Slideshow> lista = slideshowService.findAll();
 		model.addAttribute("slide", lista);
-		if(session.getAttribute("admin")==null){
-			if(username==null||username.isEmpty()){
-				return "login";
-			}
-			if(password==null||password.isEmpty()){
-				return "login";
-			}
-			Admin admin = adminService.findByUserName(username);
-			System.out.println(admin);
-			if(admin==null||!admin.getPassword().equals(adminService.cryptPass(password))){
-				return "login";
-			}else{
-				session.setAttribute("admin", admin);
-				return "admin";
-	    }
-	}
-	return "admin";
+		
+		if(session.getAttribute("admin")!=null)
+			return "admin";
+		if(username==null||username.isEmpty()){
+			return "login";
+		}
+		if(password==null||password.isEmpty()){
+			return "login";
+		}
+		Admin admin = adminService.findByUserName(username);
+		System.out.println(admin);
+		if(admin==null||!admin.getPassword().equals(adminService.cryptPass(password))){
+			return "login";
+		}else{
+			session.setAttribute("admin", admin);
+			return "admin";
+		}
+//		if(session.getAttribute("admin")==null){
+//			if(username==null||username.isEmpty()){
+//				return "login";
+//			}
+//			if(password==null||password.isEmpty()){
+//				return "login";
+//			}
+//			Admin admin = adminService.findByUserName(username);
+//			if(admin==null||!admin.getPassword().equals(adminService.cryptPass(password))){
+//				return "login";
+//			}else{
+//				session.setAttribute("admin", admin);
+//				return "admin";
+//			}
+//		}
+//		return "admin";
 	}
 	
 	@RequestMapping("/add")

@@ -68,7 +68,6 @@ public class SiteController {
 				return "login";
 			}
 			Admin admin = adminService.findByUserName(username);
-			System.out.println(admin);
 			if(admin==null||!admin.getPassword().equals(adminService.cryptPass(password))){
 				return "login";
 			}else{

@@ -11,7 +11,7 @@
         <b>E-mail:</b> hehocoban@gmail.com<br>
     </div>
     <div class="bot"><h3>Navigacija</h3><br>
-        <a href="" title="Početna strana" class="bottomlink">&#9755 Početna strana</a><br>
+        <a href="../" title="Početna strana" class="bottomlink">&#9755 Početna strana</a><br>
         <a href="akcije" title="Akcije" class="bottomlink">&#9755 Akcije</a><br>
         <a href="boje" title="Boje" class="bottomlink">&#9755 Boje</a><br>
         <a href="#kontakt" title="Kontakt" class="bottomlink">&#9755 Kontakt</a><br>

@@ -1,4 +1,5 @@
 <%@include file="top.jsp" %>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
 				<div class="info" id="info1">
         
             Firma "Stanojević" sa sedištem u Bajinoj Bašti uspešno posluje od osnivanja 2004. godine. Dugogodišnjim iskustvom u pravljenju kako kancelarijskog tako i nameštaja za kućni prostor stekli smo poverenje mnogih građana.<br>
@@ -11,6 +12,10 @@
     			</div>
    					<div class="info" id="info2">
     			</div>
+    			<div class="info" id="info2">
+        			<img src="resources/info.jpg">
+    			</div>
+    			<div style="clear: both"></div>
     			<div style="clear: both"></div>
     			<div id="head1">
         			<h1>

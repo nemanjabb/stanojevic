@@ -17,7 +17,7 @@
                 <div id="header1">
                 </div>
                 <div style="clear: both"></div>
-                <a href="" >
+                <a href="../" >
                     <div id="header2">
                     </div> 
                 </a>
@@ -35,7 +35,6 @@
                     <a href="americkiplakari"><div class="menuItem"><b>AMERIČKI PLAKARI</b></div></a>
                     <a href="akcije"><div class="menuItem"><b>AKCIJE</b></div></a>
                     <a href="boje"><div class="menuItem"><b>BOJE</b></div></a>
-                    <a href="#kontakt"><div class="menuItem"><b>KONTAKT</b></div></a>
                 <div style="clear: both"></div>
                 </div>
                 <div style="clear: both"></div>
